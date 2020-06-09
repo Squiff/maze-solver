@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application x:Class="MazeSolver.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:local="clr-namespace:MazeSolver" 
+             StartupUri="View\MazeSolver.xaml">
+    <Application.Resources>
+         
+    <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\WhistlerBlue.xaml" />
+                <ResourceDictionary Source="Themes\Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary></Application.Resources>
+</Application>

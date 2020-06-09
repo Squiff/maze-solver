@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+    <SolidColorBrush x:Key="ErrorFontColor" Color="#FFA94442"/>
+    <SolidColorBrush x:Key="ErrorBackground" Color="#FFF2DEDE"/>
+    <SolidColorBrush x:Key="PathCell" Color="WhiteSmoke"/>
+
+    <RadialGradientBrush x:Key="VisitedCell">
+        <GradientStop Color="#FFA0A0A0"/>
+        <GradientStop Color="#FF969696" Offset="1"/>
+    </RadialGradientBrush>
+
+    <RadialGradientBrush x:Key="WallCell">
+        <GradientStop Color="#E50A0A0A"/>
+        <GradientStop Color="#E5000000" Offset="1"/>
+    </RadialGradientBrush>
+
+    <RadialGradientBrush x:Key="StartCell">
+        <GradientStop Color="#CC00A000"/>
+        <GradientStop Color="#FF009600" Offset="1"/>
+    </RadialGradientBrush>
+
+    <RadialGradientBrush x:Key="FinishCell">
+        <GradientStop Color="#B2E60000"/>
+        <GradientStop Color="#FFDC0000" Offset="1"/>
+    </RadialGradientBrush>
+
+    <RadialGradientBrush x:Key="SolutionPathCell">
+        <GradientStop Color="#E50000E6" Offset="0.004"/>
+        <GradientStop Color="#FF0000E6" Offset="1"/>
+    </RadialGradientBrush>
+</ResourceDictionary>
