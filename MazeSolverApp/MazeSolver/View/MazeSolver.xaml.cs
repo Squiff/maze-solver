@@ -29,30 +29,5 @@ namespace MazeSolver
             DataContext = new MazeViewModel();
         }
 
-
-        private void Rows_Error(object sender, ValidationErrorEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-            ValidationBase x = (ValidationBase)textBox.DataContext;
-
-            var y = (BindingExpression)e.Error.BindingInError;
-            string propertyname = y.ParentBinding.Path.Path;
-
-            x.AddError(propertyname, e.Error.ErrorContent.ToString());
-        }
-
-        private void Help_Click(object sender, RoutedEventArgs e)
-        {
-            Help H = new Help();
-            H.Show();
-        }
-
-        /// <summary>
-        /// When main window is closed, exit the application
-        /// </summary>
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
 }

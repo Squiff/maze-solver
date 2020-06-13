@@ -4,6 +4,7 @@
     <SolidColorBrush x:Key="ErrorFontColor" Color="#FFA94442"/>
     <SolidColorBrush x:Key="ErrorBackground" Color="#FFF2DEDE"/>
     <SolidColorBrush x:Key="PathCell" Color="WhiteSmoke"/>
+    <SolidColorBrush x:Key="SideBarBackground" Color="#EEEEEE"/>
 
     <RadialGradientBrush x:Key="VisitedCell">
         <GradientStop Color="#FFA0A0A0"/>
@@ -29,4 +30,28 @@
         <GradientStop Color="#E50000E6" Offset="0.004"/>
         <GradientStop Color="#FF0000E6" Offset="1"/>
     </RadialGradientBrush>
+
+    <Style TargetType="TextBox" x:Key="ToolTipValidation">
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="True">
+                <Setter Property="ToolTip">
+                    <Setter.Value>
+                        <Binding Path="(Validation.Errors)/ErrorContent"
+                                     RelativeSource="{RelativeSource Self}"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Overwrite MaterialDesign Styles-->
+    <Style x:Key="MaterialDesignListBoxItem" TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="FontSize" Value="12" />
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True"> <!-- ensures selected value is set correctly on startup -->
+                <Setter Property="Background" Value="{StaticResource AttentionToActionBrush}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 </ResourceDictionary>
