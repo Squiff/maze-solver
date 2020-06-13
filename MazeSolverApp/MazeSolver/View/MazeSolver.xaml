@@ -59,6 +59,7 @@
                         <Button Content="Clear Maze" 
                             Command="{Binding ClearCommand}"
                             Margin="0,5,0,0"
+                            ToolTip="Revert maze to a blank grid"
                             />
                         <Grid Margin="0,25,0,0">
                             <Grid.ColumnDefinitions>
@@ -100,12 +101,14 @@
                         <Button Content="Update Maze Size" 
                                 Command="{Binding UpdateMazeCommand}" 
                                 Margin="0,5,0,0"
+                                ToolTip="Update the maze dimensions. Maze layout will be lost."
                                 />
 
                         <Label Content="Alorithm" Margin="0,25,0,0"/>
                         <ComboBox ItemsSource="{Binding MazeOptions.AlgorithmOptions}" 
                                     SelectedItem="{Binding MazeOptions.SelectedAlgorithm}"
                                     Margin="0,5,0,0"
+                                    ToolTip="Pathfinding algorithm used to find a solution to the maze"
                                     />
                     </StackPanel>
                 </Grid>
@@ -136,6 +139,7 @@
                         <Button Width="100"
                                 Content="Reset"
                                 Command="{Binding ResetCommand}"
+                                ToolTip="Reset solution progress. Retain maze layout"
                                 />
 
                         <!-- Start Validation -->
