@@ -102,6 +102,7 @@
     <Compile Include="Model\Maze.cs" />
     <Compile Include="Model\Solver\PriorityQueue\PriorityQueue.cs" />
     <Compile Include="Model\Solver\SolverFactory.cs" />
+    <Compile Include="Model\Solver\Solvers\NearestFirst.cs" />
     <Compile Include="ViewModel\enum\CellStatus.cs" />
     <Compile Include="View\Converter\StringVisibilityConverter.cs" />
     <Compile Include="ViewModel\Base\RelayCommand.cs" />
