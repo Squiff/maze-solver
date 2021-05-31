@@ -6,30 +6,11 @@
     <SolidColorBrush x:Key="PathCell" Color="WhiteSmoke"/>
     <SolidColorBrush x:Key="SideBarBackground" Color="#EEEEEE"/>
 
-    <RadialGradientBrush x:Key="VisitedCell">
-        <GradientStop Color="#FFA0A0A0"/>
-        <GradientStop Color="#FF969696" Offset="1"/>
-    </RadialGradientBrush>
-
-    <RadialGradientBrush x:Key="WallCell">
-        <GradientStop Color="#E50A0A0A"/>
-        <GradientStop Color="#E5000000" Offset="1"/>
-    </RadialGradientBrush>
-
-    <RadialGradientBrush x:Key="StartCell">
-        <GradientStop Color="#CC00A000"/>
-        <GradientStop Color="#FF009600" Offset="1"/>
-    </RadialGradientBrush>
-
-    <RadialGradientBrush x:Key="FinishCell">
-        <GradientStop Color="#B2E60000"/>
-        <GradientStop Color="#FFDC0000" Offset="1"/>
-    </RadialGradientBrush>
-
-    <RadialGradientBrush x:Key="SolutionPathCell">
-        <GradientStop Color="#E50000E6" Offset="0.004"/>
-        <GradientStop Color="#FF0000E6" Offset="1"/>
-    </RadialGradientBrush>
+    <SolidColorBrush x:Key="VisitedCell" Color="#A3A3A3"/>
+    <SolidColorBrush x:Key="WallCell" Color="#141414"/>
+    <SolidColorBrush x:Key="StartCell" Color="#00A000"/>
+    <SolidColorBrush x:Key="FinishCell" Color="#E60000"/>
+    <SolidColorBrush x:Key="SolutionPathCell" Color="#0000E6"/>
 
     <Style TargetType="TextBox" x:Key="ToolTipValidation">
         <Style.Triggers>
