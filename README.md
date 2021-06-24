@@ -1,6 +1,8 @@
 # Maze Solver
 The purpose of this app is to visualize maze solving/pathfinding algorithms. You will be able to create your own maze layout and watch as it is solved.
 
+![Maze Solver](/readme/mazesolverapp.png)
+
 ## Drawing The Maze
 On startup you will see a blank grid. In order to draw your maze, select one of the following drawing options and click on the maze grid to apply:
 
