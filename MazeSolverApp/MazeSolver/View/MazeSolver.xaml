@@ -104,7 +104,7 @@
                                 ToolTip="Update the maze dimensions. Maze layout will be lost."
                                 />
 
-                        <Label Content="Alorithm" Margin="0,25,0,0"/>
+                        <Label Content="Algorithm" Margin="0,25,0,0"/>
                         <ComboBox ItemsSource="{Binding MazeOptions.AlgorithmOptions}" 
                                     SelectedItem="{Binding MazeOptions.SelectedAlgorithm}"
                                     Margin="0,5,0,0"
